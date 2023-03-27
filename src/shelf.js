@@ -13,16 +13,16 @@ function unshelfBook(book, sciFiShelf) {
 }
 
 function listTitles(fantasyShelf) {
-var titles = [];
+  var titles = [];
   for (var i = 0; i < fantasyShelf.length; i++) {
-   titles.push(fantasyShelf[i].title);
-   }
-   return titles.join(", ")
+  titles.push(fantasyShelf[i].title);
+  }
+  return titles.join(", ")
 }
 
 function searchShelf(nonFictionShelf, name) {
   for (var i = 0; i < nonFictionShelf.length; i++) {
-  var shelved = false;
+    var shelved = false;
   if (nonFictionShelf[i].title === name) {
     shelved = true
   }
